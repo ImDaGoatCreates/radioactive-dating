@@ -101,12 +101,14 @@ padding:10px;
 }
 
 .decayChain {
-  width: 1000px;       /* bigger size */
-  height: auto;       /* keep proportions */
-  display: block;     
-  margin: 20px auto;  /* centers it */
+  width: auto;       /* natural width */
+  max-width: 100%;   /* don’t exceed container width */
+  display: block;
+  margin: 20px auto; /* center it */
   border: 3px solid yellow;
-  box-shadow: 0 0 20px yellow, 0 0 40px yellow;
+
+  /* Glow */
+  box-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0 60px yellow;
 }
 
 button {
@@ -154,4 +156,5 @@ input[type="text"] {
 input[type="text"]:focus {
     outline: none; /* remove default outline */
     box-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0 60px yellow;
+
 }
