@@ -1,0 +1,157 @@
+
+body
+{
+
+background:black;
+color:yellow;
+font-family:Arial;
+margin:0;
+
+}
+
+header
+{
+
+background:yellow;
+color:black;
+padding:20px;
+text-align:center;
+
+}
+
+nav
+{
+
+background:black;
+padding:10px;
+text-align:center;
+
+}
+
+nav button
+{
+
+background:yellow;
+color:black;
+border:none;
+padding:12px;
+margin:5px;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+nav button:hover
+{
+
+background:orange;
+
+}
+
+section
+{
+
+display:none;
+padding:30px;
+
+}
+
+.active
+{
+
+display:block;
+
+}
+
+.card
+{
+
+border:2px solid yellow;
+padding:20px;
+
+}
+
+img {
+  width: 400px;               /* or keep your custom size if needed */
+  height: auto;
+  border: 3px solid yellow;  /* solid yellow border */
+  margin-top: 15px;
+
+  /* GLOW EFFECT */
+  box-shadow: 0 0 20px yellow, 0 0 40px yellow;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: block;
+}
+
+a
+{
+
+color:orange;
+
+}
+
+footer
+{
+
+background:yellow;
+color:black;
+text-align:center;
+padding:10px;
+
+}
+
+.decayChain {
+  width: 1000px;       /* bigger size */
+  height: auto;       /* keep proportions */
+  display: block;     
+  margin: 20px auto;  /* centers it */
+  border: 3px solid yellow;
+  box-shadow: 0 0 20px yellow, 0 0 40px yellow;
+}
+
+button {
+    background-color: black;        /* black base */
+    color: yellow;                  /* yellow text */
+    border: 2px solid yellow;
+    padding: 12px 20px;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* glow effect */
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+    transition: all 0.3s ease;
+}
+
+/* Hover glow intensifies */
+button:hover:not(:disabled) {
+    box-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0 60px yellow;
+    transform: scale(1.05);
+}
+
+/* Disabled buttons stay grey and unclickable */
+button:disabled {
+    background-color: grey;
+    color: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Text input (fill-in-the-blank) */
+input[type="text"] {
+    background-color: black;        /* black base */
+    color: yellow;                  /* yellow text */
+    border: 2px solid yellow;
+    padding: 8px 12px;
+    font-weight: bold;
+
+    /* glow effect */
+    box-shadow: 0 0 10px yellow, 0 0 20px yellow;
+    transition: all 0.3s ease;
+}
+
+/* Input focus glow intensifies */
+input[type="text"]:focus {
+    outline: none; /* remove default outline */
+    box-shadow: 0 0 20px yellow, 0 0 40px yellow, 0 0 60px yellow;
+}
